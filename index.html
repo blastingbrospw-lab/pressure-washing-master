@@ -1085,7 +1085,6 @@
                 stroke="#F96D00"/>
     </svg>
 </div>
-<!-- JS Libraries -->
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -1103,26 +1102,30 @@
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
 
-<!-- Smooth scroll and optional Bootstrap tab activation -->
 <script>
-$(document).ready(function() {
-  $('a[href^="#"]').on('click', function(e) {
-    const target = $($(this).attr('href')); // jQuery object
-    if (target.length) {
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", function(e) {
+
+    const targetId = this.getAttribute("href");
+    const target = document.querySelector(targetId);
+
+    if(target){
       e.preventDefault();
 
-      $('html, body').animate({
-        scrollTop: target.offset().top - 80
-      }, 600);
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
 
-      // Activate tab if it exists
-      const tabTrigger = $(`a[data-toggle="tab"][href="${$(this).attr('href')}"]`);
-      if (tabTrigger.length) {
-        tabTrigger.tab('show');
+      const tabTrigger = document.querySelector(`a[data-toggle="tab"][href="${targetId}"]`);
+      if(tabTrigger){
+        $(tabTrigger).tab('show');
       }
     }
+
   });
 });
 </script>
+
 </body>
 </html>
