@@ -1099,7 +1099,29 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
+<script>
+document.querySelectorAll('.dropdown-item, .read-more-btn').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const targetId = this.getAttribute('href');
 
+    if (targetId.startsWith("#")) {
+      e.preventDefault();
+
+      // Scroll smoothly
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      // Activate tab (if exists)
+      const tabTrigger = document.querySelector(`a[data-toggle="tab"][href="${targetId}"]`);
+      if (tabTrigger) {
+        tabTrigger.click();
+      }
+    }
+  });
+});
+</script>
 </body>
 <script>
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
