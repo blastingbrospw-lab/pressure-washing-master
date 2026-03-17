@@ -75,7 +75,44 @@
            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Services
         </a>
+ <select id="serviceDropdown">
+  <option value="">-- Jump to a Service --</option>
+  <option value="#services-1">House Washing / Soft Washing</option>
+  <option value="#services-2">Concrete Cleaning</option>
+  <option value="#services-3">Fence Cleaning</option>
+  <option value="#services-4">Deck Washing</option>
+  <option value="#services-5">Window Cleaning</option>
+  <option value="#services-6">Building Cleaning</option>
+</select>
 
+<script>
+document.getElementById('serviceDropdown').addEventListener('change', function(e) {
+  if(e.target.value) {
+    document.querySelector(e.target.value).scrollIntoView({behavior:'smooth'});
+  }
+});
+</script>
+
+<section class="ftco-section ftco-intro" style="background-image: url(images/bg_2.jpg);">
+        <select id="serviceDropdown">
+      <option value="">-- Jump to a Service --</option>
+      <option value="#services-1">House Washing / Soft Washing</option>
+      <option value="#services-2">Concrete Cleaning</option>
+      <option value="#services-3">Fence Cleaning</option>
+      <option value="#services-4">Deck Washing</option>
+      <option value="#services-5">Window Cleaning</option>
+      <option value="#services-6">Building Cleaning</option>
+    </select>
+    
+    <script>
+    document.getElementById('serviceDropdown').addEventListener('change', function(e) {
+      if(e.target.value) {
+        document.querySelector(e.target.value).scrollIntoView({behavior:'smooth'});
+      }
+    });
+    </script>
+  </div>
+</nav>
         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
             <a class="dropdown-item" href="house-washing.html">House / Soft Washing</a>
             <a class="dropdown-item" href="concrete-cleaning.html">Concrete Cleaning</a>
