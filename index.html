@@ -115,56 +115,102 @@
     </div>
 </div>
 
+<style>
+/* Fix spacing + alignment */
+.hero-top-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make icons look cleaner */
+.services-2 {
+    margin-bottom: 20px;
+}
+
+.services-2 .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #007bff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+}
+
+.services-2 .text h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+    .mobile-spacing {
+        margin-top: 30px;
+    }
+}
+</style>
+
 <section class="ftco-section ftco-no-pt ftco-no-pb">
-   <div class="container">
-    <div class="row d-flex no-gutters">
-        <div class="col-md-5 d-flex justify-content-center align-items-center">
-            <img src="images/actionimage.png" alt="Blasting Bros Pressure Washing" class="img-fluid hero-top-img">
-        </div>
-        <div class="col-md-7">
-            <!-- Your text content here -->
-        </div>
-    </div>
-</div>
-            <div class="col-md-7 pl-md-5 py-md-5">
-                <div class="heading-section pt-md-5">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+
+            <!-- IMAGE (LEFT on desktop, TOP on mobile) -->
+            <div class="col-md-5 d-flex justify-content-center align-items-center">
+                <img src="images/actionimage.png" alt="Blasting Bros Pressure Washing" class="img-fluid hero-top-img">
+            </div>
+
+            <!-- TEXT (RIGHT on desktop, BELOW on mobile) -->
+            <div class="col-md-7 pl-md-5 py-5 mobile-spacing">
+
+                <div class="heading-section">
                     <h2 class="mb-4">Why Choose Us?</h2>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-6 services-2 w-100 d-flex">
-                        <div class="icon d-flex align-items-center justify-content-center"><span
-                                class="flaticon-confetti"></span></div>
+
+                    <div class="col-md-6 services-2 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-confetti"></span>
+                        </div>
                         <div class="text pl-3">
                             <h4>Local Experts</h4>
-                            <p>Serving Coon Rapids, Anoka County, Minneapolis, and anywhere in the Twin Cities metro.</p>
+                            <p>Serving Coon Rapids, Anoka County, Minneapolis, and the Twin Cities metro.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 services-2 w-100 d-flex">
-                        <div class="icon d-flex align-items-center justify-content-center"><span
-                                class="flaticon-consult"></span></div>
+
+                    <div class="col-md-6 services-2 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-consult"></span>
+                        </div>
                         <div class="text pl-3">
-                            <h4>Commercial Grade Precision and Knowledge</h4>
-                            <p>We use commercial equipment with proper settings and chemicals to avoid mold, damage and other complications</p>
+                            <h4>Commercial Grade Precision</h4>
+                            <p>We use proper equipment, settings, and chemicals to prevent damage and ensure results.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 services-2 w-100 d-flex">
-                        <div class="icon d-flex align-items-center justify-content-center"><span
-                                class="flaticon-winner"></span></div>
+
+                    <div class="col-md-6 services-2 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-winner"></span>
+                        </div>
                         <div class="text pl-3">
-                            <h4>Personal Service </h4>
-                            <p>We are a small business able to accomodate your special needs, work around your schedule, and personally address any concerns you have after completion</p>
+                            <h4>Personal Service</h4>
+                            <p>We work around your schedule and personally handle any concerns after completion.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 services-2 w-100 d-flex">
-                        <div class="icon d-flex align-items-center justify-content-center"><span
-                                class="flaticon-technical"></span></div>
+
+                    <div class="col-md-6 services-2 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-technical"></span>
+                        </div>
                         <div class="text pl-3">
-                            <h4>Affordable & Transparent Pricing</h4>
-                            <p>No hidden fees or surprises—just fair, competitive pricing for superior service.</p>
+                            <h4>Affordable Pricing</h4>
+                            <p>No hidden fees—just fair, competitive pricing for high-quality service.</p>
                         </div>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
     </div>
 </section>
