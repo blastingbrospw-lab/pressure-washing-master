@@ -8924,7 +8924,7 @@ textarea.form-control {
   background: #3c312e; }
 
 .ftco-no-pt {
-  padding-top: 0 !important; }
+  padding-top: 10px !important; }
 
 .ftco-no-pb {
   padding-bottom: 0 !important; }
