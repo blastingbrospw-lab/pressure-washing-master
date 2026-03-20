@@ -77,7 +77,6 @@
         </a>
 
         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-            <a class="dropdown-item" href="#house">House / Soft Washing</a>
 <a class="dropdown-item" href="#before-after-section" data-tab="house">House / Soft Washing</a>
 <a class="dropdown-item" href="#before-after-section" data-tab="concrete">Concrete Cleaning</a>
 <a class="dropdown-item" href="#before-after-section" data-tab="window">Window Cleaning</a>
@@ -1103,27 +1102,27 @@
 <script src="js/main.js"></script>
 
 <script>
-<script>
 document.querySelectorAll('a[data-tab]').forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
 
     const tabId = this.getAttribute("data-tab");
 
-    // Scroll to section
+    // Scroll smoothly
     const section = document.querySelector("#before-after-section");
     section.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
+      behavior: "smooth"
     });
 
-    // Open correct tab AFTER scroll
+    // Activate tab immediately (no delay needed)
     const tabTrigger = document.querySelector(`a[data-toggle="tab"][href="#${tabId}"]`);
-    if(tabTrigger){
-      setTimeout(() => {
-        $(tabTrigger).tab('show');
-      }, 300);
+    if (tabTrigger) {
+      $('.nav-link[href="#' + tabId + '"]').tab('show');
     }
+
+    // CLOSE DROPDOWN (this fixes double-click issue)
+    $('.dropdown-menu').removeClass('show');
+    $('.dropdown-toggle').attr('aria-expanded', 'false');
   });
 });
 </script>
