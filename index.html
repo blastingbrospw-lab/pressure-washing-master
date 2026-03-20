@@ -78,11 +78,11 @@
 
         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
             <a class="dropdown-item" href="#house">House / Soft Washing</a>
-<a class="dropdown-item" href="#concrete">Concrete Cleaning</a>
-<a class="dropdown-item" href="#window">Window Cleaning</a>
-<a class="dropdown-item" href="#deck">Deck Cleaning</a>
-<a class="dropdown-item" href="#fence">Fence Cleaning</a>
-<a class="dropdown-item" href="#services-section">Commercial Cleaning</a>
+<a class="dropdown-item" href="#before-after-section" data-tab="house">House / Soft Washing</a>
+<a class="dropdown-item" href="#before-after-section" data-tab="concrete">Concrete Cleaning</a>
+<a class="dropdown-item" href="#before-after-section" data-tab="window">Window Cleaning</a>
+<a class="dropdown-item" href="#before-after-section" data-tab="deck">Deck Cleaning</a>
+<a class="dropdown-item" href="#before-after-section" data-tab="fence">Fence Cleaning</a>
         </div>
     </li>
 
@@ -332,7 +332,7 @@
                     </div>
                     <h3 class="heading">House Washing / Soft Washing</h3>
                     <p>Gentle, professional house and soft washing to keep your home clean and protected.</p>
-                    <a href="#house" class="read-more-btn">Read More</a>
+                   <a href="#before-after-section" data-tab="house" class="read-more-btn">Read More</a>
                 </div>
             </div>
 
@@ -344,7 +344,7 @@
                     </div>
                     <h3 class="heading">Window Cleaning</h3>
                     <p>Crystal-clear window cleaning that brightens your home with streak-free results.</p>
-                    <a href="#window" class="read-more-btn">Read More</a>
+                    <a href="#before-after-section" data-tab="window" class="read-more-btn">Read More</a>
                 </div>
             </div>
 
@@ -356,7 +356,7 @@
                     </div>
                     <h3 class="heading">Concrete Cleaning</h3>
                     <p>Professional concrete cleaning removes dirt, grime, and stains for spotless driveways and walkways.</p>
-                    <a href="#concrete" class="read-more-btn">Read More</a>
+                    <a href="#before-after-section" data-tab="concrete" class="read-more-btn">Read More</a>
                 </div>
             </div>
 
@@ -368,7 +368,7 @@
                     </div>
                     <h3 class="heading">Deck Washing</h3>
                     <p>Gentle yet effective deck washing to clean and protect your outdoor living space.</p>
-                    <a href="#deck" class="read-more-btn">Read More</a>
+                    <a href="#before-after-section" data-tab="deck" class="read-more-btn">Read More</a>
                 </div>
             </div>
 
@@ -380,7 +380,7 @@
                     </div>
                     <h3 class="heading">Fence Washing</h3>
                     <p>Restore your fence with expert washing to remove dirt, mold, and mildew, keeping it like new.</p>
-                    <a href="#fence" class="read-more-btn">Read More</a>
+                    <a href="#before-after-section" data-tab="fence" class="read-more-btn">Read More</a>
                 </div>
             </div>
 
@@ -392,14 +392,14 @@
                     </div>
                     <h3 class="heading">Commercial Cleaning</h3>
                     <p>Reliable commercial cleaning for businesses, keeping properties clean, safe, and welcoming.</p>
-                    <a href="#services-section" class="read-more-btn">Read More</a>
+                    <a href="#before-after-section" data-tab="house" class="read-more-btn">Read More</a>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-    <div class="container">
+    <div id="before-after-section" class="container">
         <div class="row justify-content-center pb-5">
             <div class="col-md-7 heading-section text-center ftco-animate">
                 <h2>Before &amp; After Services</h2>
@@ -1103,38 +1103,27 @@
 <script src="js/main.js"></script>
 
 <script>
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+<script>
+document.querySelectorAll('a[data-tab]').forEach(link => {
   link.addEventListener("click", function(e) {
+    e.preventDefault();
 
-    const targetId = this.getAttribute("href");
-    const target = document.querySelector(targetId);
+    const tabId = this.getAttribute("data-tab");
 
-    // Only run smooth scroll for NON-tab links
-    if(target && !this.hasAttribute("data-toggle")) {
-      e.preventDefault();
+    // Scroll to section
+    const section = document.querySelector("#before-after-section");
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
 
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
-
-    // If it's a tab, let Bootstrap handle it FIRST
-    if(this.getAttribute("data-toggle") === "tab") {
-      $(this).tab('show');
-
-      // THEN scroll after a tiny delay
+    // Open correct tab AFTER scroll
+    const tabTrigger = document.querySelector(`a[data-toggle="tab"][href="#${tabId}"]`);
+    if(tabTrigger){
       setTimeout(() => {
-        const tabContent = document.querySelector(targetId);
-        if(tabContent){
-          tabContent.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
-        }
-      }, 200);
+        $(tabTrigger).tab('show');
+      }, 300);
     }
-
   });
 });
 </script>
