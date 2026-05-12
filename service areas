@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Service Areas | Blasting Bros Pressure Washing Minnesota</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- SEO -->
+<meta name="description" content="Blasting Bros provides professional pressure washing services across the Twin Cities metro, Anoka County, and surrounding Minnesota communities. See if we serve your city.">
+<meta name="keywords" content="pressure washing near me, Twin Cities pressure washing, Anoka County pressure washing, Minnesota pressure washing service areas">
+
+<!-- Social Sharing -->
+<meta property="og:title" content="Service Areas | Blasting Bros Pressure Washing">
+<meta property="og:description" content="See all the Minnesota cities and communities served by Blasting Bros Pressure Washing.">
+<meta property="og:image" content="images/bg-1.png">
+
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.ico">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="css/jquery.timepicker.css">
+<link rel="stylesheet" href="css/flaticon.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/* ── Hero Banner ── */
+.page-hero {
+    background: url(images/bg-1.png) center/cover no-repeat;
+    position: relative;
+    padding: 100px 0 70px;
+    text-align: center;
+}
+.page-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+.page-hero .container {
+    position: relative;
+    z-index: 2;
+}
+.page-hero h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2.6rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    margin-bottom: 12px;
+}
+.page-hero h1 span {
+    color: #f5a623;
+}
+.page-hero p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* ── Region Section ── */
+.region-section {
+    padding: 60px 0 30px;
+}
+.region-section .region-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #222;
+    border-left: 4px solid #007bff;
+    padding-left: 12px;
+    margin-bottom: 24px;
+}
+
+/* ── City Cards ── */
+.city-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 48px;
+}
+.city-card {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 14px 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #333;
+    transition: all 0.25s ease;
+    cursor: default;
+}
+.city-card:hover {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,123,255,0.25);
+}
+.city-card .fa {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    color: #007bff;
+    transition: color 0.25s;
+}
+.city-card:hover .fa {
+    color: #fff;
+}
+
+/* ── Coverage note ── */
+.coverage-note {
+    background: #e8f1ff;
+    border-left: 4px solid #007bff;
+    border-radius: 6px;
+    padding: 18px 22px;
+    margin-bottom: 50px;
+    font-size: 0.95rem;
+    color: #333;
+}
+.coverage-note strong {
+    color: #007bff;
+}
+
+/* ── CTA Section ── */
+.cta-section {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    padding: 70px 0;
+    text-align: center;
+}
+.cta-section h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+.cta-section p {
+    color: rgba(255,255,255,0.88);
+    font-size: 1.05rem;
+    margin-bottom: 32px;
+}
+.cta-section .btn-white {
+    background: #fff;
+    color: #007bff;
+    font-weight: 700;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    margin: 6px;
+}
+.cta-section .btn-white:hover {
+    background: #f5a623;
+    color: #fff;
+}
+.cta-section .btn-outline-white {
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 34px;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    margin: 6px;
+}
+.cta-section .btn-outline-white:hover {
+    background: #fff;
+    color: #007bff;
+}
+
+/* ── Divider ── */
+hr.section-divider {
+    border: none;
+    border-top: 2px solid #eee;
+    margin: 0 0 50px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .page-hero h1 { font-size: 1.8rem; }
+    .city-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ TOP BAR ══ -->
+<div class="wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <p class="mb-0 phone pl-md-2">
+                    <a href="tel:612-501-2524" class="mr-2"><span class="fa fa-phone mr-1"></span> (612) 501-2524</a>
+                    <a href="mailto:sales@blastingbrosmn.com"><span class="fa fa-paper-plane mr-1"></span> sales@blastingbrosmn.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">BlastingBros <br><span>Pressure Washing</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
+                       role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="index.html#before-after-section" data-tab="house">House / Soft Washing</a>
+                        <a class="dropdown-item" href="index.html#before-after-section" data-tab="concrete">Concrete Cleaning</a>
+                        <a class="dropdown-item" href="index.html#before-after-section" data-tab="window">Window Cleaning</a>
+                        <a class="dropdown-item" href="index.html#before-after-section" data-tab="deck">Deck Cleaning</a>
+                        <a class="dropdown-item" href="index.html#before-after-section" data-tab="fence">Fence Cleaning</a>
+                    </div>
+                </li>
+
+                <li class="nav-item active">
+                    <a href="service-areas.html" class="nav-link">Service Areas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#formsection" class="nav-link">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ══ HERO BANNER ══ -->
+<div class="page-hero">
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Our <span>Service Areas</span></h1>
+        <p>Professional pressure washing serving the Twin Cities metro and beyond</p>
+    </div>
+</div>
+
+<!-- ══ MAIN CONTENT ══ -->
+<section class="region-section">
+    <div class="container">
+
+        <div class="coverage-note">
+            <strong>Don't see your city?</strong> We may still be able to help! Give us a call at
+            <a href="tel:612-501-2524"><strong>(612) 501-2524</strong></a> or fill out a quote request below
+            and we'll let you know if we can reach you.
+        </div>
+
+        <!-- ── ANOKA COUNTY ── -->
+        <h2 class="region-title"><span class="fa fa-map-marker mr-2"></span>Anoka County</h2>
+        <div class="city-grid">
+            <div class="city-card"><span class="fa fa-tint"></span>Anoka</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Coon Rapids</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Blaine</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Fridley</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Columbia Heights</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Spring Lake Park</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Andover</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Ham Lake</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Ramsey</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Lino Lakes</div>
+            <div class="city-card"><span class="fa fa-tint"></span>East Bethel</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Oak Grove</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Linwood Township</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Lexington</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Circle Pines</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Centerville</div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ── HENNEPIN COUNTY ── -->
+        <h2 class="region-title"><span class="fa fa-map-marker mr-2"></span>Hennepin County</h2>
+        <div class="city-grid">
+            <div class="city-card"><span class="fa fa-tint"></span>Minneapolis</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Brooklyn Park</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Brooklyn Center</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Plymouth</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Maple Grove</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Minnetonka</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Eden Prairie</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Edina</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Bloomington</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Richfield</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Golden Valley</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Hopkins</div>
+            <div class="city-card"><span class="fa fa-tint"></span>St. Louis Park</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Crystal</div>
+            <div class="city-card"><span class="fa fa-tint"></span>New Hope</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Robbinsdale</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Champlin</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Osseo</div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ── RAMSEY COUNTY ── -->
+        <h2 class="region-title"><span class="fa fa-map-marker mr-2"></span>Ramsey County</h2>
+        <div class="city-grid">
+            <div class="city-card"><span class="fa fa-tint"></span>St. Paul</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Maplewood</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Roseville</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Shoreview</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Arden Hills</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Little Canada</div>
+            <div class="city-card"><span class="fa fa-tint"></span>North St. Paul</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Vadnais Heights</div>
+            <div class="city-card"><span class="fa fa-tint"></span>White Bear Lake</div>
+            <div class="city-card"><span class="fa fa-tint"></span>New Brighton</div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ── WASHINGTON COUNTY ── -->
+        <h2 class="region-title"><span class="fa fa-map-marker mr-2"></span>Washington County</h2>
+        <div class="city-grid">
+            <div class="city-card"><span class="fa fa-tint"></span>Woodbury</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Stillwater</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Oakdale</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Cottage Grove</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Lake Elmo</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Mahtomedi</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Hugo</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Forest Lake</div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ── DAKOTA COUNTY ── -->
+        <h2 class="region-title"><span class="fa fa-map-marker mr-2"></span>Dakota County</h2>
+        <div class="city-grid">
+            <div class="city-card"><span class="fa fa-tint"></span>Eagan</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Burnsville</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Apple Valley</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Lakeville</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Inver Grove Heights</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Rosemount</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Hastings</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Mendota Heights</div>
+            <div class="city-card"><span class="fa fa-tint"></span>West St. Paul</div>
+            <div class="city-card"><span class="fa fa-tint"></span>South St. Paul</div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- ── WRIGHT / SHERBURNE ── -->
+        <h2 class="region-title"><span class="fa fa-map-marker mr-2"></span>Wright &amp; Sherburne Counties</h2>
+        <div class="city-grid">
+            <div class="city-card"><span class="fa fa-tint"></span>Elk River</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Otsego</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Rogers</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Monticello</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Big Lake</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Becker</div>
+            <div class="city-card"><span class="fa fa-tint"></span>St. Michael</div>
+            <div class="city-card"><span class="fa fa-tint"></span>Albertville</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ══ CTA / QUOTE SECTION ══ -->
+<section class="cta-section" id="get-quote">
+    <div class="container">
+        <h2>Ready for a Clean Home?</h2>
+        <p>Serving your area — get a free, no-obligation quote today.</p>
+        <a href="index.html#formsection" class="btn-white">Get a Free Quote</a>
+        <a href="tel:612-501-2524" class="btn-outline-white"><span class="fa fa-phone mr-2"></span>(612) 501-2524</a>
+    </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <h2 class="footer-heading">Services</h2>
+                <p>House / Soft Washing, Window Cleaning, Concrete Cleaning, Deck Washing, Fence Washing, Commercial Cleaning</p>
+                <ul class="ftco-footer-social p-0">
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                <h2 class="footer-heading">Contact</h2>
+                <div class="block-23 mb-3">
+                    <ul>
+                        <li><span class="icon fa fa-map"></span><span class="text">Serving Anoka County and the Greater Twin Cities</span></li>
+                        <li><a href="tel:612-501-2524"><span class="icon fa fa-phone"></span><span class="text">612-501-2524</span></a></li>
+                        <li><a href="mailto:sales@blastingbrosmn.com"><span class="icon fa fa-paper-plane"></span><span class="text">sales@blastingbrosmn.com</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <p class="copyright">
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by
+                    <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Loader -->
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+    </svg>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
